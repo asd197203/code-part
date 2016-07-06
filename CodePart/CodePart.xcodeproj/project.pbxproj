@@ -14,6 +14,7 @@
 		B5BECC471D2B3EB200A2C059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BECC461D2B3EB200A2C059 /* Assets.xcassets */; };
 		B5BECC4A1D2B3EB200A2C059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BECC481D2B3EB200A2C059 /* LaunchScreen.storyboard */; };
 		B5BECC551D2B3EB200A2C059 /* CodePartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BECC541D2B3EB200A2C059 /* CodePartTests.m */; };
+		B5BECC621D2BB5B300A2C059 /* StartView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BECC611D2BB5B300A2C059 /* StartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		B5BECC501D2B3EB200A2C059 /* CodePartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodePartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BECC541D2B3EB200A2C059 /* CodePartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodePartTests.m; sourceTree = "<group>"; };
 		B5BECC561D2B3EB200A2C059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BECC601D2BB5B300A2C059 /* StartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartView.h; sourceTree = "<group>"; };
+		B5BECC611D2BB5B300A2C059 /* StartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		B5BECC391D2B3EB200A2C059 /* CodePart */ = {
 			isa = PBXGroup;
 			children = (
+				B5BECC5F1D2BB59E00A2C059 /* StartView */,
 				B5BECC3D1D2B3EB200A2C059 /* AppDelegate.h */,
 				B5BECC3E1D2B3EB200A2C059 /* AppDelegate.m */,
 				B5BECC401D2B3EB200A2C059 /* ViewController.h */,
@@ -109,6 +113,15 @@
 				B5BECC561D2B3EB200A2C059 /* Info.plist */,
 			);
 			path = CodePartTests;
+			sourceTree = "<group>";
+		};
+		B5BECC5F1D2BB59E00A2C059 /* StartView */ = {
+			isa = PBXGroup;
+			children = (
+				B5BECC601D2BB5B300A2C059 /* StartView.h */,
+				B5BECC611D2BB5B300A2C059 /* StartView.m */,
+			);
+			path = StartView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +227,7 @@
 				B5BECC421D2B3EB200A2C059 /* ViewController.m in Sources */,
 				B5BECC3F1D2B3EB200A2C059 /* AppDelegate.m in Sources */,
 				B5BECC3C1D2B3EB200A2C059 /* main.m in Sources */,
+				B5BECC621D2BB5B300A2C059 /* StartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

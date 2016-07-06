@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "StartView.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    StartView *starV = [[StartView  alloc]initWithFrame:CGRectMake(100, 100, 100, 40)];
+    [starV setValue:2.5 animation:YES];
+    starV.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:starV];
 }
 
 - (void)didReceiveMemoryWarning {
