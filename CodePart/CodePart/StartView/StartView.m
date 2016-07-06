@@ -45,7 +45,6 @@ static NSInteger kStartCount =5;
     CGFloat perwidth = self.frame.size.width / kStartCount;
     CGRect frame = self.startView.frame;
     frame.size.width = perwidth * value;
-    NSLog(@"frame.size.width===%f",frame.size.width);
     if (animation) {
         [UIView animateWithDuration:0.5 animations:^{
             self.startView.frame = frame;
