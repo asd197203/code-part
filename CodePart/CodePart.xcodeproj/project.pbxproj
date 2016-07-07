@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B58F06B11D2DFFD200D6E940 /* UIViewController+catetory.m in Sources */ = {isa = PBXBuildFile; fileRef = B58F06B01D2DFFD200D6E940 /* UIViewController+catetory.m */; };
 		B5BECC3C1D2B3EB200A2C059 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BECC3B1D2B3EB200A2C059 /* main.m */; };
 		B5BECC3F1D2B3EB200A2C059 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BECC3E1D2B3EB200A2C059 /* AppDelegate.m */; };
 		B5BECC421D2B3EB200A2C059 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BECC411D2B3EB200A2C059 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B58F06AF1D2DFFD200D6E940 /* UIViewController+catetory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+catetory.h"; sourceTree = "<group>"; };
+		B58F06B01D2DFFD200D6E940 /* UIViewController+catetory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+catetory.m"; sourceTree = "<group>"; };
 		B5BECC371D2B3EB200A2C059 /* CodePart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodePart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BECC3B1D2B3EB200A2C059 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5BECC3D1D2B3EB200A2C059 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B58F06AE1D2DFFD200D6E940 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B58F06AF1D2DFFD200D6E940 /* UIViewController+catetory.h */,
+				B58F06B01D2DFFD200D6E940 /* UIViewController+catetory.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		B5BECC2E1D2B3EB200A2C059 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +96,7 @@
 		B5BECC391D2B3EB200A2C059 /* CodePart */ = {
 			isa = PBXGroup;
 			children = (
+				B58F06AE1D2DFFD200D6E940 /* Category */,
 				B5BECC5F1D2BB59E00A2C059 /* StartView */,
 				B5BECC3D1D2B3EB200A2C059 /* AppDelegate.h */,
 				B5BECC3E1D2B3EB200A2C059 /* AppDelegate.m */,
@@ -227,6 +240,7 @@
 				B5BECC421D2B3EB200A2C059 /* ViewController.m in Sources */,
 				B5BECC3F1D2B3EB200A2C059 /* AppDelegate.m in Sources */,
 				B5BECC3C1D2B3EB200A2C059 /* main.m in Sources */,
+				B58F06B11D2DFFD200D6E940 /* UIViewController+catetory.m in Sources */,
 				B5BECC621D2BB5B300A2C059 /* StartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +432,7 @@
 				B5BECC5B1D2B3EB200A2C059 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5BECC5C1D2B3EB200A2C059 /* Build configuration list for PBXNativeTarget "CodePartTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +441,7 @@
 				B5BECC5E1D2B3EB200A2C059 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
