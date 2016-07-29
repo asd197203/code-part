@@ -55,7 +55,7 @@
     BOOL proir = [[change objectForKey:NSKeyValueChangeNotificationIsPriorKey] boolValue];
     //只接受值改变的消息
     
-    if(!proir)return;
+    if(proir)return;
     NSKeyValueChange changeKind = [[change objectForKey:NSKeyValueChangeKindKey] integerValue];
     if (changeKind!=NSKeyValueChangeSetting) {
         return;

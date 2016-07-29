@@ -8,8 +8,11 @@
 
 #import "ViewController.h"
 #import "StartView.h"
-@interface ViewController ()
-
+#import "NSObject+Add.h"
+#import "People.h"
+#import "TapStarView.h"
+@interface ViewController ()<TapStarViewDelegate>
+@property(nonatomic,strong)People *peo;
 @end
 
 @implementation ViewController
@@ -21,8 +24,29 @@
     [starV setValue:2.5 animation:YES];
     starV.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:starV];
+    TapStarView *tapView = [[TapStarView alloc]initWithFrame:CGRectMake(100, 200, 100, 20)];
+    tapView.delegate = self;
+    [self.view addSubview:tapView];
+    _peo =[[ People alloc]init];
+    [_peo addObserverBlockForKeyPath:@"name" block:^(id  _Nonnull obj, id  _Nonnull oldVal, id  _Nonnull newVal) {
+        NSLog(@"name修改为 =%@",newVal);
+        
+    }];
 }
-
+-(void)tapStarViewWithScore:(NSString *)score
+{
+    NSLog(@"---%@",score);
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"XWTestNotificaton" object:nil userInfo:@{@"test" : @"1"}];
+    static BOOL flag = NO;
+    if (!flag) {
+        _peo.name = @"wazrx";
+        flag = YES;
+    }else{
+        _peo = nil;//objA 销毁的时候其绑定的KVO会自己移除
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
