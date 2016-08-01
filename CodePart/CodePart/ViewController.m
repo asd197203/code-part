@@ -30,7 +30,10 @@
     _peo =[[ People alloc]init];
     [_peo addObserverBlockForKeyPath:@"name" block:^(id  _Nonnull obj, id  _Nonnull oldVal, id  _Nonnull newVal) {
         NSLog(@"name修改为 =%@",newVal);
-        
+        NSLog(@"adasd");
+    }];
+    [[NSNotificationCenter defaultCenter]addNotificationForName:@"XWTestNotificaton" block:^(NSNotification * _Nonnull notification) {
+        NSLog(@"---%@",notification.userInfo);
     }];
 }
 -(void)tapStarViewWithScore:(NSString *)score
