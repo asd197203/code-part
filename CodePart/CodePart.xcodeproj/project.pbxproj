@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B52D9EC51DC70E09000B2403 /* BridgeWebview in Resources */ = {isa = PBXBuildFile; fileRef = B52D9EC41DC70E09000B2403 /* BridgeWebview */; };
 		B56A17B21D34832800999588 /* NSObject+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = B56A17B11D34832800999588 /* NSObject+Add.m */; };
+		B578F4ED1DD374D600AF3A0D /* Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = B578F4EC1DD374D600AF3A0D /* Hook.m */; };
 		B58F06B11D2DFFD200D6E940 /* UIViewController+catetory.m in Sources */ = {isa = PBXBuildFile; fileRef = B58F06B01D2DFFD200D6E940 /* UIViewController+catetory.m */; };
 		B5BECC3C1D2B3EB200A2C059 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BECC3B1D2B3EB200A2C059 /* main.m */; };
 		B5BECC3F1D2B3EB200A2C059 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BECC3E1D2B3EB200A2C059 /* AppDelegate.m */; };
@@ -32,8 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B52D9EC41DC70E09000B2403 /* BridgeWebview */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BridgeWebview; path = Model/BridgeWebview; sourceTree = "<group>"; };
 		B56A17B01D34832800999588 /* NSObject+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Add.h"; sourceTree = "<group>"; };
 		B56A17B11D34832800999588 /* NSObject+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Add.m"; sourceTree = "<group>"; };
+		B578F4EB1DD374D600AF3A0D /* Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hook.h; sourceTree = "<group>"; };
+		B578F4EC1DD374D600AF3A0D /* Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hook.m; sourceTree = "<group>"; };
 		B58F06AF1D2DFFD200D6E940 /* UIViewController+catetory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+catetory.h"; sourceTree = "<group>"; };
 		B58F06B01D2DFFD200D6E940 /* UIViewController+catetory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+catetory.m"; sourceTree = "<group>"; };
 		B5BECC371D2B3EB200A2C059 /* CodePart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodePart.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +119,7 @@
 		B5BECC391D2B3EB200A2C059 /* CodePart */ = {
 			isa = PBXGroup;
 			children = (
+				B52D9EC41DC70E09000B2403 /* BridgeWebview */,
 				B5F3FC6A1D49E27D003E1879 /* Model */,
 				B56A17AF1D34830100999588 /* NotificationAndKVO */,
 				B58F06AE1D2DFFD200D6E940 /* Category */,
@@ -164,6 +170,8 @@
 			children = (
 				B5F3FC6B1D49E28E003E1879 /* People.h */,
 				B5F3FC6C1D49E28E003E1879 /* People.m */,
+				B578F4EB1DD374D600AF3A0D /* Hook.h */,
+				B578F4EC1DD374D600AF3A0D /* Hook.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +259,7 @@
 				B5BECC4A1D2B3EB200A2C059 /* LaunchScreen.storyboard in Resources */,
 				B5BECC471D2B3EB200A2C059 /* Assets.xcassets in Resources */,
 				B5BECC451D2B3EB200A2C059 /* Main.storyboard in Resources */,
+				B52D9EC51DC70E09000B2403 /* BridgeWebview in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +284,7 @@
 				B5F3FC6D1D49E28E003E1879 /* People.m in Sources */,
 				B58F06B11D2DFFD200D6E940 /* UIViewController+catetory.m in Sources */,
 				B5BECC621D2BB5B300A2C059 /* StartView.m in Sources */,
+				B578F4ED1DD374D600AF3A0D /* Hook.m in Sources */,
 				B56A17B21D34832800999588 /* NSObject+Add.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
