@@ -1,3 +1,8 @@
 {
-	"data":200
+  "statusCode": 200,
+  "message": "成功",
+  "data": {
+    "newVersion": "1"
+  },
+  "success": true
 }
