@@ -32,7 +32,7 @@
         NSLog(@"name修改为 =%@",newVal);
         NSLog(@"adasd");
     }];
-    [[NSNotificationCenter defaultCenter]addNotificationForName:@"XWTestNotificaton" block:^(NSNotification * _Nonnull notification) {
+    [[NSNotificationCenter defaultCenter]addNotificationForName:@"XWTestNotification" block:^(NSNotification * _Nonnull notification) {
         NSLog(@"---%@",notification.userInfo);
     }];
 }
@@ -41,7 +41,7 @@
     NSLog(@"---%@",score);
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"XWTestNotificaton" object:nil userInfo:@{@"test" : @"1"}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"XWTestNotification" object:nil userInfo:@{@"test" : @"1"}];
     static BOOL flag = NO;
     if (!flag) {
         _peo.name = @"wazrx";
